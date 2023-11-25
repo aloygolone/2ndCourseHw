@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Главная</title>
 </head>
-<body>
+<body onload="">
     <section class="top center">
         <h1 class="top__title">Добро пожаловать<br>на мой сайт !</h1>
         <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="top__text_bold">поехали</span> и <span class="top__text_bold">приступай</span></p>
@@ -24,7 +24,7 @@
         <div class="discription">
             <h2 class="discription__title">Времена года</h2>
             <p class="discription__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <a class="discription__go">Играть!</a>
+            <a onclick="season();" class="discription__go">Играть!</a>
         </div>
         <svg class="gameimg" width="485" height="334" viewBox="0 0 485 334" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2203_44)">
@@ -110,7 +110,6 @@
             </defs>
         </svg>    
     </section>
-    <script src="./scripts.js">
-    </script>
+    <script src="./scripts.js"></script>
 </body>
 </html>

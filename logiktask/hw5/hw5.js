@@ -1,15 +1,11 @@
 // Задание 1
 
 let less = (a, b) => {
-    if (a < b) {
-        console.log(a);        
-    } else {
-        console.log(b);
-    }
+    return a < b ? a : b;
 }
 
-less(8, 4);
-less(6, 6);
+console.log(less(8, 4));
+console.log(less(6, 6));
 
 // Задание 2
 
@@ -116,34 +112,37 @@ circle2.Perimeter();
 // Задание 8
 
 let season = () => {
+
     let userNumber = Number(prompt('Введите номер месяца'));
-    let userNaN;
-    if (userNumber >=1 || userNumber <= 12) {
-        if (userNumber === 1 || userNumber === 2 || userNumber === 12) {
-            return console.log(`Зима`)            
-        } else if (userNumber === 3 || userNumber === 4 || userNumber === 5) {
-            return console.log(`Весна`)
-        } else if (userNumber === 6 || userNumber === 7 || userNumber === 8) {
-            return console.log(`Лето`)
-        } else {
-            return console.log(`Осень`)
-        }
-    } else {
-        do {
-            userNaN = Number(prompt('Введите номер месяца (нужно ввести от 1 до 12'))
-        } while (userNaN < 1 || userNaN > 12 || isNaN(userNaN));
-        if (userNaN >=1 || userNaN <= 12) {
-            if (userNaN === 1 || userNaN === 2 || userNaN === 12) {
+    
+    let result = () => {
+        if (userNumber >=1 && userNumber <= 12) {
+            if (userNumber === 1 || userNumber === 2 || userNumber === 12) {
                 return console.log(`Зима`)            
-            } else if (userNaN === 3 || userNaN === 4 || userNaN === 5) {
+            } else if (userNumber === 3 || userNumber === 4 || userNumber === 5) {
                 return console.log(`Весна`)
-            } else if (userNaN === 6 || userNaN === 7 || userNaN === 8) {
+            } else if (userNumber === 6 || userNumber === 7 || userNumber === 8) {
                 return console.log(`Лето`)
             } else {
                 return console.log(`Осень`)
             }
-        }    
-    }   
+        }
+    };
+
+    if (userNumber < 1 || userNumber > 12 || isNaN(userNumber)) {
+
+        do {
+            userNumber = Number(prompt('Введите номер месяца (нужно ввести от 1 до 12'))
+        } while (userNumber < 1 || userNumber > 12 || isNaN(userNumber));
+
+        result();
+
+    } else {
+
+        result();
+
+    }  
+        
 }
 
 season();
