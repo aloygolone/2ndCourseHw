@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 767px) {
 
     .center {
         padding-left: 16px;
@@ -7,7 +7,6 @@
 
     .top {
 
-        width: 375px;
         height: 735px;
         background-position: -240.259px 0px;
         background-size: 294%;
@@ -27,9 +26,12 @@
         }
     }
 
+    .games {
+        justify-content: center;
+    }
+
     .eachgameblock {
         height: 654px;
-        width: 375px;
         display: flex;
         align-content: center;
         flex-wrap: wrap;
@@ -54,7 +56,7 @@
     }
 
     .gameimg {
-        width: 344px;
-        height: 236px;
+        max-width: 344px;
+        max-height: 236px;
     }
 }

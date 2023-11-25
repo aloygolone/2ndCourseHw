@@ -119,7 +119,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 135px;
 }
 
 .discription {
@@ -133,7 +134,7 @@ a {
   font-size: 48px;
 }
 .discription__text {
-  width: 584px;
+  max-width: 584px;
   color: #FFF;
   font-weight: 300;
   line-height: 32px;
@@ -159,14 +160,17 @@ a {
 .discription__go:hover {
   background: #EB443F;
 }
+.discription .gameimg {
+  max-width: 485px;
+  max-height: 333px;
+}
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .top {
-    width: 375px;
     height: 735px;
     background-position: -240.259px 0px;
     background-size: 294%;
@@ -183,9 +187,11 @@ a {
     font-size: 14px;
     line-height: 22px;
   }
+  .games {
+    justify-content: center;
+  }
   .eachgameblock {
     height: 654px;
-    width: 375px;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -206,16 +212,19 @@ a {
     width: 343px;
   }
   .gameimg {
-    width: 344px;
-    height: 236px;
+    max-width: 344px;
+    max-height: 236px;
   }
 }
-@media (min-width: 376px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .games {
     justify-content: center;
+  }
+  .eachgameblock {
+    gap: 64px;
   }
 }/*# sourceMappingURL=style.css.map */

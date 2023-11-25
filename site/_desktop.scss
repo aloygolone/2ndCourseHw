@@ -125,7 +125,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 135px;
 }
 
 .discription {
@@ -140,7 +141,7 @@ a {
     }
 
     &__text {
-        width: 584px;
+        max-width: 584px;
         color: #FFF;
         font-weight: 300;
         line-height: 32px;
@@ -167,5 +168,10 @@ a {
 
     &__go:hover {
         background: #EB443F;
+    }
+
+    .gameimg {
+        max-width: 485px;
+        max-height: 333px;
     }
 }
