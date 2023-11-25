@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  padding-top: 217px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/background.jpg), lightgray 50%;
+  background-size: cover;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  height: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 32px;
+}
+.top__title {
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.top__text {
+  margin-bottom: 12px;
+  max-width: 481px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.top__text_bold {
+  font-weight: 700;
+}
+.top__go {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  transition: all 0.3s;
+  border: none;
+}
+.top__go:hover {
+  background: #EB443F;
+}
+
+.games {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background: #000915;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  box-sizing: border-box;
+}
+
+.game {
+  width: 378px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-top: 236px;
+}
+
+.game:hover {
+  border: 3px solid #44D2FF;
+}
+
+.game-1 {
+  background-image: url(img/game1.jpg);
+}
+
+.game-2 {
+  background-image: url(img/game2.jpg);
+}
+
+.game-3 {
+  background-image: url(img/game3.jpg);
+}
+
+.eachgameblock {
+  height: 800px;
+  background: #000915;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discription {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.discription__title {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 48px;
+}
+.discription__text {
+  width: 584px;
+  color: #FFF;
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 18px;
+}
+.discription__go {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  transition: all 0.3s;
+  border: none;
+}
+.discription__go:hover {
+  background: #EB443F;
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    width: 375px;
+    height: 735px;
+    background-position: -240.259px 0px;
+    background-size: 294%;
+    align-items: center;
+  }
+  .top__title {
+    max-width: 343px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .top__text {
+    max-width: 343px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .eachgameblock {
+    height: 654px;
+    width: 375px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+  .discription {
+    align-items: center;
+  }
+  .discription__title {
+    font-size: 32px;
+    text-align: center;
+    width: 243px;
+  }
+  .discription__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .gameimg {
+    width: 344px;
+    height: 236px;
+  }
+}
+@media (min-width: 376px) and (max-width: 1439px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .games {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
