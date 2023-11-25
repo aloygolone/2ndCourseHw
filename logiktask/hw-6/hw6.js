@@ -18,12 +18,14 @@ console.log(c.join(' '));
 
 // Задание 4
 
-const d = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-];
-console.log(d);
+const array = [];
+const arr1 = [1, 1, 1];
+const arr2 = [1, 1, 1];
+const arr3 = [1, 1, 1];
+array[0] = arr1;
+array[1] = arr2;
+array[2] = arr3;
+console.log(array);
 
 // Задание 5
 
@@ -69,9 +71,7 @@ console.log(arrayBig.flat());
 
 let arrayNumbs = [1, 4, 7, 3, 4, 6];
 for (let i = 0; i+1 < arrayNumbs.length; i++) {
-    let a = arrayNumbs[i];
-    let b = arrayNumbs[i+1];
-    let sum = a + b;
+    let sum = arrayNumbs[i] + arrayNumbs[i+1];
     console.log(sum);
 }
 
