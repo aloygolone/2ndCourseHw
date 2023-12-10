@@ -128,3 +128,4 @@ let formatDate = (date) => {
 }
 
 console.log(formatDate(new Date()));
+
